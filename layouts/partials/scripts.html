@@ -10,6 +10,8 @@
   <script type="text/javascript" src="{{ "lib/slideout/slideout-1.0.1.min.js" | relURL }}"></script>
 {{- end }}
 
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
 <!-- Jane theme main js -->
 {{ $jsMain := resources.Get "js/main.js" | js.Build }}
 {{ $secureJS := $jsMain | resources.ExecuteAsTemplate "js/main.js" . | fingerprint }}

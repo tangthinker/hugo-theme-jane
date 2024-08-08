@@ -38,15 +38,6 @@
     </p>
     {{- end }}
   {{- end }}
-  <p class="copyright-item">
-    <span class="item-title">{{ i18n "license" }}</span>
-    <span class="item-content">
-    {{- if .Params.contentCopyright -}}
-      {{ .Params.contentCopyright | safeHTML }}
-    {{- else -}}
-      {{ .Site.Params.contentCopyright | safeHTML }}
-    {{- end -}}
-    </span>
-  </p>
+
 </div>
 {{- end }}
